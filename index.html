@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slytherin Study Vault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cinzel:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">🕷️</div>
+          <div>
+            <h1>Slytherin Study Vault</h1>
+            <p>Dark magic, disciplined plans</p>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <div class="avatar">A</div>
+          <div>
+            <h2 id="userName">Astra</h2>
+            <p id="userLevel">Level 1 • 0 XP</p>
+          </div>
+        </div>
+
+        <nav id="sidebarNav" class="sidebar-nav"></nav>
+
+        <div class="sidebar-foot">
+          <button class="secondary-btn" id="exportBtn">Export data</button>
+          <label class="secondary-btn import-btn">
+            Import data
+            <input type="file" id="importInput" accept="application/json" hidden />
+          </label>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Study fortress</p>
+            <h2 id="pageHeading">Dashboard</h2>
+          </div>
+          <div class="topbar-actions">
+            <div class="xp-pill">
+              <span id="xpBadge">0 XP</span>
+              <div class="xp-bar"><div id="xpFill" class="xp-fill"></div></div>
+            </div>
+            <button class="primary-btn" id="quickStudyBtn">Open study hall</button>
+          </div>
+        </header>
+
+        <section class="page active" id="dashboardPage">
+          <div id="dashboardContent"></div>
+        </section>
+
+        <section class="page" id="marksPage">
+          <div id="marksContent"></div>
+        </section>
+
+        <section class="page" id="studyIndexPage">
+          <div id="studyIndexContent"></div>
+        </section>
+
+        <section class="page" id="skillsPage">
+          <div id="skillsContent"></div>
+        </section>
+
+        <section class="page" id="studyHallPage">
+          <div id="studyHallContent"></div>
+        </section>
+
+        <section class="page" id="examHallPage">
+          <div id="examHallContent"></div>
+        </section>
+
+        <section class="page" id="timetablePage">
+          <div id="timetableContent"></div>
+        </section>
+
+        <section class="page" id="calendarPage">
+          <div id="calendarContent"></div>
+        </section>
+
+        <section class="page" id="libraryPage">
+          <div id="libraryContent"></div>
+        </section>
+
+        <section class="page" id="careerPage">
+          <div id="careerContent"></div>
+        </section>
+
+        <section class="page" id="crushPage">
+          <div id="crushContent"></div>
+        </section>
+
+        <section class="page" id="boysPage">
+          <div id="boysContent"></div>
+        </section>
+
+        <section class="page" id="relaxPage">
+          <div id="relaxContent"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
